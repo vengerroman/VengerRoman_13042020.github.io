@@ -14,7 +14,7 @@ function include(url) {
     document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-include("js/cookies.js");
+include("js/favorites.js");
 include("js/modal.js");
 
 const galleryElement = document.getElementById("galleryItems");
