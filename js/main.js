@@ -59,7 +59,7 @@ onFilterChange = (filter) => {
     await fetch('http://my-json-server.typicode.com/moviedb-tech/movies/list')
         .then(response => response.json())
         .then(data => {
-            state.data = state.fetchResult = [...data];
+            state.data = state.fetchResult = [...data, ...data]; //add more data to represent in list
             listRender();
             gridRender();
             favoritesListRender();
